@@ -1,9 +1,10 @@
 extends layout
 
 block content
-	div
-		p #{selected.name}
-		p #{selected.tel}
-		p #{selected.email}
-		p #{selected.address}
+	.text-center#card.col-xs-offset-3.col-xs-6
+		h1 #{selected.name}
+		h2 #{selected.tel}
+		h2 #{selected.email}
+		h2 #{selected.address}
+		a(href='/') Back to Contacts
 block script

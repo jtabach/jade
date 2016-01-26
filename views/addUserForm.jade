@@ -1,27 +1,29 @@
 extends layout
 
 block content
-	h3 Enter New Contact Information
-		hr
-		form.form-horizontal
-			.form-group.col-sm-6
-				label.col-sm-3.control-label Contact Name
-				.col-sm-9
-					input#name.form-control(type='text', placeholder='Jon Doe', required='')
-			.form-group.col-sm-6
-				label.col-sm-3.control-label Phone Number
-				.col-sm-9
-					input#tel.input-medium.bfh-phone.form-control(type='text', data-format='+1 (ddd) ddd-dddd', placeholder='(555-555-5555)', required='')
-			.form-group.col-sm-6
-				label.col-sm-3.control-label Email Address
-				.col-sm-9
-					input#email.form-control(type='email', placeholder='email@abc.com', required='')
-			.form-group.col-sm-6
-				label.col-sm-3.control-label Home Address
-				.col-sm-9
-					input#address.form-control(type='text', placeholder='123 main st. ', required='')
-			.form-group
-				.col-sm-offset-10
-					button#addContact.btn.btn-default(type='submit') Add Contact
+	h1.text-center Enter New Contact Information
+	hr
+	form.form-horizontal
+		.form-group.col-sm-6
+			label.col-sm-3.control-label Contact Name
+			.col-sm-9
+				input#name.form-control(type='text', placeholder='Jon Doe', required='')
+		.form-group.col-sm-6
+			label.col-sm-3.control-label Phone Number
+			.col-sm-9
+				input#tel.input-medium.bfh-phone.form-control(type='text', data-format='+1 (ddd) ddd-dddd', placeholder='(555-555-5555)', required='')
+		.form-group.col-sm-6
+			label.col-sm-3.control-label Email Address
+			.col-sm-9
+				input#email.form-control(type='email', placeholder='email@abc.com', required='')
+		.form-group.col-sm-6
+			label.col-sm-3.control-label Home Address
+			.col-sm-9
+				input#address.form-control(type='text', placeholder='123 main st. ', required='')
+		.form-group
+			.row
+				a(href='/')
+					button#back.btn.btn-danger.col-sm-offset-1.col-sm-2(type='button') Back To Contacts
+				button#addContact.btn.btn-primary.col-sm-offset-6.col-sm-2(type='submit') Add Contact
 block script
 	script(src='javascripts/main.js')

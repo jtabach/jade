@@ -2,16 +2,18 @@ extends layout
 
 block content
 	//- h1= title
-	button#addContactLink Add Contact
-	div
-		table
+	h1.text-center All Contacts
+	div.col-xs-offset-1.col-xs-10
+		table.table
 			thead
 				tr: th Contacts
 			tbody
 				each contact in arr
 					tr
 						td #{contact.name}
+						td #{contact.tel}
 						td
 							a(href='/moreInfo/' +  '#{contact.email}') More Info
+	button#addContactLink.col-xs-offset-1.btn.btn-primary Add New Contact
 block script
 	script(src='javascripts/main.js')
