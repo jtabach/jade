@@ -1,5 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	//- h1= title
+	button#addContactLink Add Contact
+	div
+		table
+			thead
+				tr: th Contacts
+			tbody
+				each contact in arr
+					tr
+						td #{contact.name}
+						td
+block script
+	script(src='javascripts/main.js')
