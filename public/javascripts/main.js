@@ -5,6 +5,7 @@ $(document).ready(init);
 function init() {
 	$('#addContactLink').click(addContactLink);
 	$('form').submit(addName);
+	// $('body').on('click', '.info', getInfo);
 }
 
 function addContactLink() {
@@ -30,3 +31,11 @@ function addName(e) {
 		location.replace('/');
 	})
 }
+
+// function getInfo() {
+// 	console.log('info');
+// 	$.get('./', function(req, res) {
+// 		var index = req;
+// 		console.log(index);
+// 	})
+// }
